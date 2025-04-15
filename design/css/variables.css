@@ -1,4 +1,55 @@
 :root {
     --color-1: #ffffff;
     --color-2: #000000;
+    --color-3: #ff00b3;
+}
+
+@font-face {
+    font-family: 'arsenal-italic';
+    src: url(../resources/font/arsenal/Arsenal/Arsenal-Italic.ttf);
+}
+
+@font-face {
+    font-family: 'arsenal-regular';
+    src: url(../resources/font/arsenal/Arsenal/Arsenal-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'arsenal-bold';
+    src: url(../resources/font/arsenal/Arsenal/Arsenal-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'sora-regular';
+    src: url(../resources/font/sora/Sora/Sora-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'sora-italic';
+    src: url(../resources/font/sora/Sora/Sora-Italic.ttf);
+}
+
+@font-face {
+    font-family: 'sora-bold';
+    src: url(../resources/font/sora/Sora/Sora-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'epilogue';
+    src: url(../resources/font/epilogue/Epilogue/Epilogue-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'epilogue-italic';
+    src: url(../resources/font/epilogue/Epilogue/Epilogue-Italic.ttf);
+}
+
+@font-face {
+    font-family: 'epilogue-bold';
+    src: url(../resources/font/epilogue/Epilogue/Epilogue-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'clicker';
+    src: url(../resources/font/clicker/Clicker_Script/ClickerScript-Regular.ttf);
 }
