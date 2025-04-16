@@ -27,13 +27,17 @@ ul {
     background-color: blueviolet;
     min-height: 100vh;
     display: block;
-    position: fixed;
-    left: 270px;
     padding: 0 30px;
-    top: 0;
-    right: 0;
-    z-index: 0;
     opacity: 1;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.main-container {
+    padding-left: 270px;
+
 }
 
 .padd-15 {
@@ -47,12 +51,68 @@ ul {
     margin: auto;
 }
 
+.section .container {
+    padding: 60px;
+    padding-bottom: 70px;
+}
+
+.section-title {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.section-title h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--color-1);
+    position: relative;
+}
+
+.section-title h2::before {
+    content: '';
+    width: 50px;
+    height: 5px;
+    background-color: var(--color-3);
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+.section-title h2::after {
+    content: '';
+    width: 25px;
+    height: 4px;
+    background-color: var(--color-3);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 8px;
+}
+
+
 .row {
     display: flex;
     flex-wrap: wrap;
     margin-left: -15px;
     margin-right: -15px;
     position: relative;
+}
+
+.btn {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px 35px;
+    color: rgb(243, 34, 34);
+    border-radius: 40px;
+    display: inline-block;
+    white-space: nowrap;
+    border: none;
+    background: var(--color-1);
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.05);
 }
 
 .aside {
@@ -89,7 +149,7 @@ ul {
 
 .aside .logo a span {
     font-family: 'clicker', cursive;
-    font-family: 40px;
+    font-size: 40px;
 }
 
 .aside .logo a::before {
@@ -203,6 +263,7 @@ h3.hello {
     margin: 15px 0;
 }
 
+/* Letra de Sara Hernandez en cursiva... */
 h3.hello span {
     font-family: 'clicker', cursive;
     font-size: 30px;
@@ -210,6 +271,22 @@ h3.hello span {
     color: var(--color-1);
 }
 
+h3.my-profession {
+    font-size: 30px;
+    margin: 15px 0;
+}
+
+/*Programming student color letra*/
+.typing {
+    color: var(--color-1);
+}
+
+/*Letra del parrafo introducción*/
+.home-info p {
+    margin-bottom: 70px;
+    font-size: 20px;
+    color: var(--color-1);
+}
 
 .home .home-img {
     flex: 0 0 40%;
@@ -218,6 +295,30 @@ h3.hello span {
     position: relative;
 }
 
+.home-img::after {
+    content: '';
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    border-bottom: 10px solid var(--color-1);
+    border-right: 10px solid var(--color-2);
+    right: 20px;
+    bottom: -40px;
+}
+
+.home-img::before {
+    content: '';
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    border-top: 10px solid var(--color-1);
+    border-left: 10px solid var(--color-2);
+    left: -5px;
+    top: -40px;
+}
+
 .home .home-img img {
+    margin: auto;
+    border-radius: 5px;
     height: 400px;
 }
